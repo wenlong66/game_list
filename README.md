@@ -25,10 +25,8 @@
 
 | 仓库 | 类型 | 语言 | 最近更新 | 说明 |
 | --- | --- | --- | --- | --- |
-| [godogen](https://github.com/wenlong66/godogen) | AI 游戏开发工具 | - | 2026-05-29 | 使用 Claude Code / Codex 辅助 Godot 和 Bevy 游戏开发。 |
 | [spine2d-animation-mcp](https://github.com/wenlong66/spine2d-animation-mcp) | 动画生成 MCP | - | 2026-03-30 | 用于创建 SPINE2D 动画的 MCP server。 |
 | [EGamePlay](https://github.com/wenlong66/EGamePlay) | 战斗 / 技能框架 | - | 2025-10-30 | 基于 Entity-Component 模式的轻量战斗技能框架。 |
-| [mushroom](https://github.com/wenlong66/mushroom) | 游戏服务端框架 | - | 2023-11-28 | 基于 skynet 的 game server framework。 |
 | [AssetStudio](https://github.com/wenlong66/AssetStudio) | Unity 资源工具 | - | 2023-09-14 | 探索、提取、导出 Unity 资源和 AssetBundle。 |
 | [skynet](https://github.com/wenlong66/skynet) | 在线游戏框架 | - | 2020-09-27 | 轻量在线游戏框架。 |
 
