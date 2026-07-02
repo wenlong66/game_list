@@ -2,7 +2,7 @@
 
 从 GitHub 用户 [`wenlong66`](https://github.com/wenlong66?tab=repositories) 最近更新的公开仓库中筛选游戏、游戏引擎、游戏开发框架和游戏相关工具，作为后续调研记录。
 
-更新时间：2026-06-30
+更新时间：2026-07-01
 
 ## 最近更新的游戏仓库
 
@@ -13,6 +13,8 @@
 | [OpenTTD](https://github.com/wenlong66/OpenTTD) | 交通运输模拟游戏 | C++ | 2026-06-29 | 基于 Transport Tycoon Deluxe 的开源模拟经营游戏。 |
 | [Cataclysm-DDA](https://github.com/wenlong66/Cataclysm-DDA) | 生存 Roguelike | C++ | 2026-06-29 | 末日背景回合制开放世界生存游戏。 |
 | [Mindustry](https://github.com/wenlong66/Mindustry) | 塔防 / RTS / 自动化 | Java | 2026-06-29 | 自动化生产链 + 塔防 + RTS。 |
+| [Unciv](https://github.com/wenlong66/Unciv) | 4X 回合制策略重实现 | Kotlin | 2026-06-29 | Civilization V 的开源 Android / Desktop 重实现。 |
+| [DevilutionX](https://github.com/wenlong66/DevilutionX) | 动作 RPG 引擎移植 / 重实现 | C++ | 2026-07-01 | Diablo 的现代系统移植版本。 |
 | [endless-sky](https://github.com/wenlong66/endless-sky) | 太空探索 / 贸易 / 战斗 | - | 2026-06-26 | 太空探索、贸易和战斗游戏。 |
 | [CnC_Remastered_Collection](https://github.com/wenlong66/CnC_Remastered_Collection) | RTS 重制源码 | - | 2026-06-26 | Command & Conquer: Remastered Collection。 |
 | [OpenXcom](https://github.com/wenlong66/OpenXcom) | 战术策略游戏重实现 | - | 2026-06-26 | 原版 X-Com 开源克隆。 |
@@ -37,5 +39,6 @@
 
 - [MisakaTranslator](https://github.com/wenlong66/MisakaTranslator)：Galgame / 文字游戏翻译工具。
 - [Sunshine](https://github.com/wenlong66/Sunshine)：游戏串流服务端。
+- [remotion](https://github.com/wenlong66/remotion)：React 编程式视频生成工具，不是游戏本体或游戏开发基础设施。
 - [AIAssistOpenCV](https://github.com/wenlong66/AIAssistOpenCV)：AI 游戏辅助工具。
 - [MiroFish](https://github.com/wenlong66/MiroFish)：群体智能引擎，描述含 engine，但不是明确游戏项目。
