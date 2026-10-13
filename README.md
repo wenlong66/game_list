@@ -14,7 +14,7 @@
 | --- | --- | --- |
 | 现有收藏中先做 Windows 换皮，控制成本与时间 | **Unciv 优先验证；Mindustry / Endless Sky 按范围复排** | 不再无条件固定第二、第三名；先明确资源量、品质与平台，再比较总投入 |
 | 现有收藏中希望覆盖 Windows、iOS、Android | **Mindustry** | 已有三端基础；必须实际验证 iOS 工具链、签名与分发条件，三端成本另算 |
-| 允许补充一个小型 Roguelike | **Shattered Pixel Dungeon** | 与 Unciv 同列首轮低投入验证组；是额外候选，不是原版 pixel-dungeon，也没有自动创建 fork |
+| 允许补充一个小型 Roguelike | **Shattered Pixel Dungeon** | 与 Unciv 同列首轮低投入验证组；是额外候选，没有自动创建 fork |
 | 只做 Godot 小型沙盒原型 | **Microverse** | 开源部分是早期 Demo，不按成熟完整游戏评估；保留云端 AI 时另算运行费用 |
 
 详见：[逐项分析、资料来源与换皮验收流程](docs/ai-game-dev-recommendations.md) · [成本、时间、维护与估算口径](docs/cost-and-time-assessment.md)。
@@ -37,7 +37,7 @@
 
 **默认完整目标不能被悄悄降成小 Demo。**S0 是样例验证，S1 是需另行确定内容范围的小首版，S2 才是保留原版内容规模的完整换皮。S2 未完成全量盘点，暂不写确定周数和人民币总价。现金等级是相对压力，不是供应商报价；没有实际模型用量、素材方案和质量目标，不能把数字写成事实。
 
-全部 **14 个原游戏 + 1 个额外候选**的成本驱动、前置条件、样例工时、维护压力，以及平台附加工时和运行时模型费用，见[成本与时间评估](docs/cost-and-time-assessment.md)。
+全部 **12 个现有游戏 + 1 个额外候选**的成本驱动、前置条件、样例工时、维护压力，以及平台附加工时和运行时模型费用，见[成本与时间评估](docs/cost-and-time-assessment.md)。
 
 ## 分类标准
 
@@ -74,48 +74,37 @@
 | [OpenRCT2](https://github.com/wenlong66/OpenRCT2) | Windows | 公园主题与资源改造 | 收藏版仍要求 RCT2 原版文件；必须验证原创替代资源和加载链完整，不能只换可见贴图 |
 | [OpenXcom](https://github.com/wenlong66/OpenXcom) | Windows | 战棋规则、装备和资源改造 | 收藏版要求原版 X-COM 资源；完整独立化涉及旧格式、资源加载和构建依赖 |
 
-## D｜独立发行前置条件未解决：3 个
+## D｜独立发行前置条件未解决：2 个
 
 | 项目 | 平台判断 | 主要障碍 | 可保留的用途 |
 | --- | --- | --- | --- |
 | [jynew](https://github.com/wenlong66/jynew) | 平台不是当前主要障碍 | 自定义许可证限制代码与资源，禁止未授权商业行为；换美术不能消除代码限制 | 授权范围内的社区 Mod、学习或获得额外授权后重新评估 |
 | [DevilutionX](https://github.com/wenlong66/DevilutionX) | Windows，另有移动工程；未实测 | 收藏版 Sustainable Use License 对外分发有免费、非商业限制，另涉及 Diablo 数据 | 许可范围内的非商业改造与引擎研究 |
-| [CnC_Remastered_Collection](https://github.com/wenlong66/CnC_Remastered_Collection) | Windows | 主要是两个游戏 DLL 和地图编辑器；不是完整独立游戏，使用编译结果需拥有重制版 | 专用 Mod 与历史 RTS 源码研究 |
 
 没有默认要求商业化或闭源。D 类表示需要先澄清授权或补全工程，**不等同于“AI 不能修改”**。
 
-## P｜平台待补：1 个
-
-| 项目 | 当前确认范围 | 处理方式 |
-| --- | --- | --- |
-| [pixel-dungeon（原版）](https://github.com/wenlong66/pixel-dungeon) | 收藏仓库只确认 Android 工程，另需 PD-classes；未确认 Windows 或 iOS+Android 路线 | 暂不计入合格池。不要把其他同名版本或衍生项目的平台能力填到这个条目 |
-
-## 补充候选｜不混入原有 14 个
+## 补充候选｜不混入现有 12 个游戏
 
 | 项目 | 平台基础 | 推荐定位 | 注意事项 |
 | --- | --- | --- | --- |
 | [Shattered Pixel Dungeon](https://github.com/00-Evan/shattered-pixel-dungeon) | 上游有 Desktop、Android、iOS 工程 | **A 类补充候选**：小型 Roguelike 换皮与持续开发 | GPL-3.0；有自有版本修改指南；iOS 工具链与签名仍需验证。本次只记录上游，不创建 fork |
 
-## 游戏开发相关仓库｜4 个工具，单独分类
+## 游戏开发相关仓库｜3 个工具，单独分类
 
 | 项目 | 正确定位 | 对本目标的价值与限制 |
 | --- | --- | --- |
 | [EGamePlay](https://github.com/wenlong66/EGamePlay) | 战斗 / 技能框架 | 可用于后续开发，不是完整游戏；README 列有收费插件和移植冲突提示 |
 | [spine2d-animation-mcp](https://github.com/wenlong66/spine2d-animation-mcp) | 实验性资产管线 | 当前为 PSD → Spine 骨架 / 图集概念验证，**尚无动画生成**；真实素材与编辑器验证仍是待办 |
 | [AssetStudio](https://github.com/wenlong66/AssetStudio) | Unity 资源查看 / 提取工具 | 不提供游戏底座；能够导出不代表取得素材使用权 |
-| [skynet](https://github.com/wenlong66/skynet) | 游戏服务端框架 | 可让 AI 开发服务器业务；不解决客户端换皮与客户端平台适配 |
 
 这些工具的采购、依赖授权、接入与维护工时应计入所选游戏的成本，不能因为工具本身源码公开就忽略，也不与完整游戏直接比成品工期。
 
-## 外围项目｜保留，不参加游戏底座排名
+## 外围项目｜2 个，不参加游戏底座排名
 
 | 项目 | 原清单定位 |
 | --- | --- |
 | [MisakaTranslator](https://github.com/wenlong66/MisakaTranslator) | Galgame / 文字游戏翻译工具 |
-| [Sunshine](https://github.com/wenlong66/Sunshine) | 游戏串流服务端 |
-| [remotion](https://github.com/wenlong66/remotion) | React 编程式视频生成工具 |
 | [AIAssistOpenCV](https://github.com/wenlong66/AIAssistOpenCV) | AI 游戏辅助工具 |
-| [MiroFish](https://github.com/wenlong66/MiroFish) | 群体智能引擎，非本清单中的完整游戏底座 |
 
 ## 换皮与发行的共通边界
 
@@ -135,8 +124,8 @@
 
 ## 原始记录与维护
 
-原有 **14 个游戏、4 个开发工具和5 个外围项目均保留**；Shattered Pixel Dungeon 为额外候选，不冒充原有收藏。
+按用户要求移除指定条目后，当前清单保留 **12 个游戏、3 个开发工具和 2 个外围项目**；Shattered Pixel Dungeon 为额外候选，不计入这 12 个游戏。
 
-原 README（包括原仓库日期、语言和描述）完整保存在[原始收藏快照](docs/archive/original-catalog-2026-07-01.md)，其旧描述不作为当前推荐依据。分类调整原因及资料见[详细文档](docs/ai-game-dev-recommendations.md)。
+原 README（包括原仓库日期、语言和描述）完整保存在[原始收藏快照](docs/archive/original-catalog-2026-07-01.md)，其旧描述不作为当前推荐依据。历史快照中的已移除条目不参与当前分类与排名；分类资料见[详细文档](docs/ai-game-dev-recommendations.md)。
 
-本次只更新分类文档和维护规则，**没有刷新或改写** [仓库元数据缓存](wenlong66_repos_updated.json)，也没有修改任何游戏本体、创建游戏 fork 或部署游戏。
+本次同步清单与分类文档，并移除不再需要的历史仓库元数据缓存；没有修改任何游戏本体、创建游戏 fork 或部署游戏。后续刷新收藏时可重新获取 GitHub 公开仓库信息。

@@ -14,7 +14,7 @@
 
 **新增要求：成本与时间必须参与最终选型。**先满足平台、授权和独立工程条件，再比较现金、有效人工工时、维护及运营。A/B/C/D/P 保留为适配分类，不表示已验证的投入排名。样例验证、小范围独立首版和原版内容规模完整换皮必须分开估算，不能为了低报价默认删减用户要保留的内容。
 
-## 一、现有 14 个游戏的分类
+## 一、现有 12 个游戏的分类
 
 | 分类 | 项目 | 平台判断 | AI 换皮与持续开发判断 | 主要限制 |
 |---|---|---|---|---|
@@ -30,8 +30,6 @@
 | C：低优先 | OpenXcom | Windows，满足平台门槛 | 可做规则与素材改造，但完整独立化成本偏高 | 收藏版要求原版 X-COM 资源；需要验证没有原版数据仍能完整运行，兼顾旧资源格式和构建依赖 |
 | D：不进入默认独立发行候选 | jynew | 平台不是主要淘汰原因 | 技术上可以修改剧情、角色和界面 | 自定义许可证限制代码与资源使用，禁止未授权商业行为；换美术不会消除代码授权限制。授权范围内的免费社区 Mod 是另一条路线 |
 | D：不进入默认独立发行候选 | DevilutionX | Windows，另有移动工程；平台不是主要淘汰原因 | 技术上可做 Mod 和引擎修改 | 收藏版采用 Sustainable Use License，对外分发有免费、非商业限制；还涉及原版 Diablo 数据。不是可自由收费换皮发行的底座 |
-| D：不进入默认独立发行候选 | CnC_Remastered_Collection | Windows | 适合专用 Mod 和源码研究，不是现成独立游戏底座 | 主要是两个游戏 DLL 与地图编辑器，并非完整独立产品；使用编译结果需拥有重制版游戏；归档且构建较旧 |
-| P：平台待补，不计入合格池 | pixel-dungeon（原版） | 收藏仓库只确认 Android 工程 | 小型 Roguelike 玩法和图集替换有价值 | 尚未从该仓库确认 Windows 或 iOS+Android 构建路线；不能用其他同名产品/分支的平台能力代替 |
 
 ## 二、优先项目应怎么使用
 
@@ -57,11 +55,11 @@ iOS 工程真实存在，不过收藏版本的构建脚本还涉及 RoboVM、Arc
 
 Godot/GDScript 与命令行导入、运行、导出能力对自动化友好。但这个仓库的公开内容是早期 Demo。只想做小型换皮原型时可以优先；需要拿现成成熟游戏换皮发行时不排在前三。
 
-## 三、一个值得单独补充的替代项目
+## 三、一个值得单独补充的候选项目
 
-**[Shattered Pixel Dungeon](https://github.com/00-Evan/shattered-pixel-dungeon)**，不是现有收藏里的原版 pixel-dungeon。本次只补充上游链接和候选定位，没有创建 fork，也不计入原有 14 个项目。
+**[Shattered Pixel Dungeon](https://github.com/00-Evan/shattered-pixel-dungeon)** 是额外上游候选。本次只保留上游链接和候选定位，没有创建 fork，也不计入现有 12 个游戏。
 
-上游明确提供 Android、iOS、Desktop 工程，并有制作自有版本的变更指南，覆盖游戏名、包名、图标、标题画面、存档身份、更新地址等。建议单独加入 A 类的“小型 Roguelike 候选”，不要直接把它的平台能力填到原版条目。
+上游明确提供 Android、iOS、Desktop 工程，并有制作自有版本的变更指南，覆盖游戏名、包名、图标、标题画面、存档身份、更新地址等。建议单独加入 A 类的“小型 Roguelike 候选”；平台工程存在不等于本次构建通过。
 
 其代码为 GPL-3.0。iOS 文档也明确承认从零构建比 Android/桌面复杂，并不是完整的一键指南，因此仍须验证 RoboVM、签名、Xcode 和分发条件。
 
@@ -72,9 +70,8 @@ Godot/GDScript 与命令行导入、运行、导出能力对自动化友好。�
 | EGamePlay | 战斗/技能框架 | 可做后续开发模块；不是可直接换皮的完整游戏。README 列有收费插件及移植冲突提示 |
 | spine2d-animation-mcp | 实验性资产管线 | 当前是 PSD 到 Spine 骨架/图集的概念验证，不是已经完成动画生成的成熟工具 |
 | AssetStudio | 资源查看/提取工具 | 不提供游戏底座；能导出素材不代表拥有使用授权 |
-| skynet | 服务端框架 | 可让 AI 开发服务器业务，但与客户端换皮和客户端平台支持是两回事 |
 
-原清单的 MisakaTranslator、Sunshine、remotion、AIAssistOpenCV、MiroFish 继续保留为外围工具，不参与换皮游戏底座排名。
+当前保留 MisakaTranslator、AIAssistOpenCV 两个外围工具，不参与换皮游戏底座排名。
 
 工具的许可证、付费依赖、接入和维护时间应归入使用它的游戏预算，不能因源码公开而默认免费，也不能与完整游戏的成品工期直接比较。
 
@@ -103,7 +100,7 @@ Godot/GDScript 与命令行导入、运行、导出能力对自动化友好。�
 
 - **现有收藏，Windows 优先并控制投入**：Unciv 先验证；Mindustry / Endless Sky 根据内容量、题材与平台总成本复排，不再固定无条件的第二、第三名。
 - **现有清单里要求 Windows+iOS+Android**：先验证 Mindustry，但新增平台的构建、真机与发布回归必须计入预算，不视为零成本。
-- **允许补充一个小型 Roguelike**：将 Shattered Pixel Dungeon 与 Unciv 同列首轮低投入验证组；它仍是额外候选，不混同于原版，也不是实测成本相同。
+- **允许补充一个小型 Roguelike**：将 Shattered Pixel Dungeon 与 Unciv 同列首轮低投入验证组；它仍是额外候选，不计入现有游戏数量，也不是实测成本相同。
 - **只做 Godot 小型原型**：Microverse；不要把早期 Demo 的低投入排在成熟成品前，运行时云端大模型另算持续费用。
 - **保留原版全量内容与动画质量**：先做资源盘点与代表性试做，不能套用小范围首版的工期。
 
@@ -116,11 +113,10 @@ Godot/GDScript 与命令行导入、运行、导出能力对自动化友好。�
 - Unciv、Mindustry、Endless Sky 提升为优先验证对象；不是承诺已经换皮成功。
 - Microverse 从通用首选改为小型沙盒条件推荐，避免把早期 Demo 当作成熟游戏。
 - jynew 的代码与资源授权成为独立发行前置条件，不能靠换图绕过。
-- 原版 pixel-dungeon 单列平台待补，Shattered Pixel Dungeon 作为不同项目补充。
 - Wesnoth、OpenRA、Cataclysm-DDA 等的内容扩展能力仍有价值，但与完整视觉替换的工作量分开评估。
 - 新增成本/时间后保留适配分类，改用同范围、同平台和同质量下的总投入比较；不再把“能由 AI 做”直接等同于“便宜、快”。
 
-本次只做文档更新，不刷新仓库元数据缓存，也不改任何游戏工程。后续应逐项记录固定提交、构建命令、测试平台、资源清单和实际验收结果，再调整分类。
+本次同步清单与文档，并移除不再需要的历史仓库元数据缓存，不改任何游戏工程。后续应逐项记录固定提交、构建命令、测试平台、资源清单和实际验收结果，再调整分类。
 
 ## 九、成本与时间的必填记录
 
@@ -128,7 +124,7 @@ Godot/GDScript 与命令行导入、运行、导出能力对自动化友好。�
 
 现阶段只对部分 S0/S1 给有前提的人日占位，S2 的确切工期和人民币金额仍待资产盘点、试做和报价。Windows 预算不能冒充 iOS+Android 或三端预算；审核等待、授权谈判与外包排队不能冒充纯工作时长。
 
-完整表覆盖 14 个原游戏及 1 个额外候选，并记录原版资源、平台或授权不确定时为什么暂不估价。明细与公式见[成本与时间评估](cost-and-time-assessment.md)，避免多个文档维护互相冲突的独立报价。
+完整表覆盖当前 12 个游戏及 1 个额外候选，并记录原版资源、平台或授权不确定时为什么暂不估价。明细与公式见[成本与时间评估](cost-and-time-assessment.md)，避免多个文档维护互相冲突的独立报价。
 
 ## 资料来源
 
@@ -163,14 +159,11 @@ Godot/GDScript 与命令行导入、运行、导出能力对自动化友好。�
 27. [OpenXcom 原版资源要求](https://github.com/wenlong66/OpenXcom/blob/master/README.md)
 28. [Jynew 许可证](https://github.com/wenlong66/jynew/blob/main/LICENSE)
 29. [DevilutionX 收藏版许可证](https://github.com/wenlong66/DevilutionX/blob/master/LICENSE.md)
-30. [CnC Remastered 收藏版说明](https://github.com/wenlong66/CnC_Remastered_Collection/blob/master/README.md)
-31. [原版 pixel-dungeon 工程](https://github.com/wenlong66/pixel-dungeon)
-32. [Shattered Pixel Dungeon 工程与平台](https://github.com/00-Evan/shattered-pixel-dungeon)
-33. [Shattered 自有版本变更指南](https://github.com/00-Evan/shattered-pixel-dungeon/blob/master/docs/recommended-changes.md)
-34. [Shattered iOS 构建说明及困难](https://github.com/00-Evan/shattered-pixel-dungeon/blob/master/docs/getting-started-ios.md)
-35. [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.en.html)
-36. [Apple App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
-37. [EGamePlay 收藏版 README](https://github.com/wenlong66/EGamePlay/blob/main/README.md)
-38. [spine2d-animation-mcp 收藏版现状](https://github.com/wenlong66/spine2d-animation-mcp/blob/main/README.md)
-39. [AssetStudio 收藏版 README](https://github.com/wenlong66/AssetStudio/blob/master/README.md)
-40. [skynet 收藏版 README](https://github.com/wenlong66/skynet/blob/master/README.md)
+30. [Shattered Pixel Dungeon 工程与平台](https://github.com/00-Evan/shattered-pixel-dungeon)
+31. [Shattered 自有版本变更指南](https://github.com/00-Evan/shattered-pixel-dungeon/blob/master/docs/recommended-changes.md)
+32. [Shattered iOS 构建说明及困难](https://github.com/00-Evan/shattered-pixel-dungeon/blob/master/docs/getting-started-ios.md)
+33. [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.en.html)
+34. [Apple App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+35. [EGamePlay 收藏版 README](https://github.com/wenlong66/EGamePlay/blob/main/README.md)
+36. [spine2d-animation-mcp 收藏版现状](https://github.com/wenlong66/spine2d-animation-mcp/blob/main/README.md)
+37. [AssetStudio 收藏版 README](https://github.com/wenlong66/AssetStudio/blob/master/README.md)
